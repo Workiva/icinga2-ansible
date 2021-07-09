@@ -138,7 +138,6 @@
     name: "{{ icinga2_web2_db }}"
     state: import
     target: "{{ icinga2_web2_mysql_schema_rh }}"
-  when: icinga_web_db.changed == true
 
 - name: Define web server daemon package.
   set_fact:
